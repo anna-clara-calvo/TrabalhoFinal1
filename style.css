@@ -1,0 +1,77 @@
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: rgb(6, 167, 22);
+    /* background-image: url(./images/uwp2181382.gif); */
+    background-color: #241e20;
+    font-family: Andale Mono, monospace;
+}
+.logo{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 15px;
+}
+.logo:hover {
+    transition: 0.3s;
+    transform: scale(1.1);
+}
+.introdução{
+    padding: 100px 80px;
+    text-align: justify;
+
+}
+.iniciar{
+    text-align: center;
+}
+.jogador{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px;
+}
+.icone{
+    display:flex;
+    flex-direction: column;
+}
+.perfil{
+    justify-content: space-evenly;
+    display: inline-block;
+    transition: box-shadow 0.1s;
+    background-color: #00ff04;
+    text-align: center;
+    color:black
+
+}
+.perfil:hover{
+    transition: 0.3s;
+    font-weight: 600;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 35px #00ff04;
+
+}
+.titulo{
+    padding-right: 0 auto;
+    margin: 0 auto;
+    border-right: 4px solid rgb(6, 167, 22);
+}
+.typing-animation{
+    animation: blinkCursor 800ms infinite normal;
+}
+@keyframes blinkCursor{
+    from{
+        border-right-color:rgb(6, 167, 22);
+    }
+    to{
+        border-right-color:transparent;
+    }
+}
+.footer{
+    color:#00ff04;
+
+}
